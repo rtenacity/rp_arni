@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Authors</title>
+        <link rel="stylesheet" href="styles/style.css" />
+        <link rel="stylesheet" href="styles/bootstrap.css" />
+        <!--<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- X CSS -->
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css">
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+            integrity="sha384-tViUnnbYAV00FLIhhi3v/dWt3Jxw4gZQcNoSCxCIFNJVCx7/D55/wXsrNIRANwdD"
+            crossorigin="anonymous">
+        <!-- KaTeX JS -->
+        <script defer
+            src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js"></script>
+        <script defer
+            src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js"
+            onload="renderMathInElement(document.body);"></script>
+
+        <script type="module">
+        import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+      </script>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+            <div class="container-fluid">
+                <a class="navbar-brand px-2" href="/">
+                    <img src="images/atom-svgrepo-com.svg" alt width="30"
+                        height="24" class="d-inline-block align-text-top">
+                    Searching for Dark Photon Production
+                </a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarColor01">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarColor01">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/">Home
+                                <!--<span class="visually-hidden">(current)</span> -->
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="authors.html">Authors</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active"
+                                href="background.html">Background</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="procedure.html">Procedure</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Results</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Conclusion</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="d-flex mb-0"
+            style="min-height: 20vh; padding: 5px; margin-top: 50px">
+            <div class="card border-primary mx-auto" style="max-width: 55rem;">
+                <div class="card-header"> <h3
+                        style="text-align :center">Background</h2></div>
+                <div class="card-body align-items:center">
+                    <p class="card-text" style="text-align: center">
+
+                        <h4 style="text-align:center">Introduction</h4>
+                        <ul>
+
+                            <li>Dark matter makes up 27% of the energy density
+                                and 85% of the matter density of the
+                                universe.</li>
+
+                            <li>The Standard Model does not account for dark
+                                matter, a separate dark sector is proposed </li>
+
+                            <li>The dark photon is a force carrier for the dark
+                                sector, similar to the photon, interacts via
+                                kinetic mixing</li>
+
+                            <li>New particle can be introduced to the standard
+                                model by extending SM gauge group with new
+                                \(U(1)\) gauge symmetry</li>
+
+                        </ul>
+
+                        <h4 style="text-align:center">The Lagrangian</h4>
+                        <ul>
+
+                            <li>Dark photon is described by the kinetic mixing
+                                lagrangian: </li>
+
+                            $$\mathcal{L}_0=-\frac{1}{4}F_{\mu \nu}F^{\mu \nu}
+                            -\frac{1}{4}F'_{\mu \nu}F'^{\mu \nu} +
+                            \frac{\epsilon}{2}F_{\mu \nu}F'^{\mu \nu}$$
+                            $$\mathcal{L}_{int} = e J_\mu A^{\mu} + e' J'_\mu
+                            A'^{\mu}$$
+
+                            <li>Where \(F_{\mu\nu}\) and \(F'_{\mu\nu}\) are the
+                                field strength tensors
+                                and \(A_{\mu} \) and \(A'_{\mu}\) are the photon
+                                and dark photon fields</li>
+
+                            <li> \(\epsilon\) is the kinetic mixing
+                                parameter</li>
+
+                        </ul>
+
+                        <h4 style="text-align:center">Diagonalizing Terms</h4>
+                        <ul>
+                            <li>
+                                Need to remove the mixing term so the kinetic
+                                terms only consist of parameters from one field
+                            </li>
+
+                            $$\begin{pmatrix}
+                            A^\mu_a \\
+                            A^\mu_b
+                            \end{pmatrix}
+                            =
+                            \begin{pmatrix}
+                            \frac{1}{\sqrt{1 - \epsilon^2}} & 0 \\
+                            -\frac{\epsilon}{\sqrt{1 - \epsilon^2}} & 1
+                            \end{pmatrix}
+                            \begin{pmatrix}
+                            \cos\theta & -\sin\theta \\
+                            \sin\theta & \cos\theta
+                            \end{pmatrix}
+                            \begin{pmatrix}
+                            A'^\mu \\
+                            A^\mu
+                            \end{pmatrix},
+                            $$
+                            <li>After this rotation, if the dark photon has
+                                mass, we end up with the Lagrangian containing
+                                this term:</li>
+                            $$\mathcal{L} \supset -\frac{e \epsilon}{\sqrt{1 -
+                            \epsilon^2}} J_\mu A'^\mu \simeq -e \epsilon J_\mu
+                            A'^\mu,$$
+
+                            <li>
+                                Based on the equation, the dark photon can
+                                interact with the same particles as a photon
+                                (suppressed by a factor \(\epsilon$\))
+                            </li>
+                            <li>
+                                This portal opens up new interaction/production
+                                channels.
+                            </li>
+                            <li>
+
+                                - For instance, in meson decays, a neutral pion
+                                \(\pi^0\) can decay into a photon and a dark
+                                photon:
+                            </li>
+
+                            $$\pi^0 \rightarrow \gamma + \gamma'$$
+
+                            <li>
+
+                                The rate of such a process is proportional to
+                                \(\epsilon^2\) \((\approx 10^{-6})\).
+
+                            </li>
+                            <li>
+                                The dark photon would contribute to missing
+                                energy signatures in experiments.
+                            </li>
+                        </ul>
+
+                        <h4 style="text-align:center">Machine Learning
+                            Approach</h4>
+                        <ul>
+                            <li>The goal is to design an algorithm that can
+                                search for dark photons via missing/abnormal
+                                energy signatures.</li>
+
+                            <li>A binary classification model can be used to
+                                evaluate a data point if a dark photon is
+                                produced or not.</li>
+
+                            <li>Due to the nature of dark photon production, the
+                                resulting dataset will be imbalanced, with a
+                                majority of interaction not producing a dark
+                                photon.</li>
+
+                            <li>This imbalance can be accounted for with an
+                                AdaBoost model.</li>
+                        </ul>
+
+                        <div style="text-align:center;">
+                            <img src="images/AdaBoost.png" width="300"
+                                height="auto" alt="AdaBoost Diagram"
+                                class="mx-auto" />
+                        </div>
+
+                        <ul>
+                            <li>The AdaBoost model has a set of hyperparameters
+                                (the number of estimators and the learning
+                                rate).</li>
+
+                            <li>Tuning the hyperparameters manually can take a
+                                lot of time to approach an optimal
+                                solution.</li>
+
+                            <li>An optimal solution to this problem can be
+                                reached with a genetic algorithm.</li>
+                        </ul>
+
+                        <div style="text-align:center;">
+                            <div class="mermaid">
+                                graph LR
+                                A[Initialize Population] --> B[Evaluate Fitness]
+                                B --> C{Termination Condition Met?}
+                                C -->|No| D[Selection]
+                                D --> E[Crossover]
+                                E --> F[Mutation]
+                                F --> G[Replace Least Fit]
+                                G --> B
+                                C -->|Yes| H[Return Best Solution]
+                            </div>
+                        </div>
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+    </body>
+</html>

@@ -214,6 +214,11 @@ body {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
+/* Select all paragraph text inside table elements and make the color red */
+table p {
+  font-size: 1rem;
+}
+
 hr {
   margin: 1rem 0;
   color: inherit;
@@ -277,6 +282,7 @@ h6, .h6 {
 p {
   margin-top: 0;
   margin-bottom: 1rem;
+  line-height: 1.5rem
 }
 
 abbr[title] {
@@ -2500,6 +2506,7 @@ textarea.form-control-lg {
   display: inline-block;
   margin-right: 1rem;
 }
+
 
 .btn-check {
   position: absolute;
