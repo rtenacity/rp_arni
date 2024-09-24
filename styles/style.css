@@ -1,3 +1,62 @@
 table > p {
     color: red;
 }
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+.fade-in { animation: fadeIn 2s; }
+
+/* Add this CSS to your styles/style.css or inside a <style> tag */
+@keyframes slideIn {
+    from {
+      transform: translateY(10%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes slideInLess {
+    from {
+      transform: translateY(5%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  .slide-in {
+    animation: slideIn 0.8s ease-out;
+  }
+
+  .slide-in-less {
+    animation: slideInLess 0.8s ease-out;
+  }
+  
+
+  table {
+    border-collapse:separate;
+    border:solid black 1px;
+    border-radius:6px;
+}
+
+td, th {
+    border-left:solid black 1px;
+    border-top:solid black 1px;
+}
+
+th {
+    background-color: blue;
+    border-top: none;
+}
+
+td:first-child, th:first-child {
+     border-left: none;
+}
